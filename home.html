@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/filson-pro" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <main class="main__wrapper">
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar__links--wrapper">
+          <li class="navbar__link">
+            <a href="#">TESTIMONIALS</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#">INGREDIENTS</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#">PACKAGES</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#">FAQS</a>
+          </li>
+        </ul>
+
+        <!-- Mobie Nav -->
+        <button class="nav__menu--btn-open">
+          <img src="./images/hamburger.png" alt="hamburger icon" class="nav__menu--btn-open-img">
+        </button>
+        <!-- Mobile Nav Links -->
+        <div class="mobile__nav--links">
+          <ul class="mobile__nav--items">
+            <li class="mobile__nav--item">
+              <a href="#" class="mobile__nav--item-link">TESTIMONIALS</a>
+            </li>
+            <li class="mobile__nav--item">
+              <a href="#" class="mobile__nav--item-link">INGREDIENTS</a>
+            </li>
+            <li class="mobile__nav--item">
+              <a href="#" class="mobile__nav--item-link">PACKAGES</a>
+            </li>
+            <li class="mobile__nav--item">
+              <a href="#" class="mobile__nav--item-link">FAQS</a>
+            </li>
+          </ul>
+          <button class="nav__menu--btn-close">
+            <img src="./images/close-icon.png" alt="menu close" class="nav__menu--btn-close-img">
+          </button>
+        </div>
+
+        <div class="navbar__logo--wrapper">
+          <a href="#">
+            <img class="navbar__logo--img" src="./images/logo-header.png" alt="Svalbaroi">
+          </a>
+        </div>
+        <div class="navbar__btn--wrapper">
+          <button class="navbar__account--btn">
+            <img src="./images/icon-account.png" alt="account">
+            <span>My Account</span>
+          </button>
+
+          <!-- Account DropDown -->
+          <ul class="navbar__account--dropdown">
+            <li class="navbar__account--dropdown-link">
+              <a href="#">Login</a>
+            </li>
+            <li class="navbar__account--dropdown-link">
+              <a href="#">Signup</a>
+            </li>
+          </ul>
+
+          <button class="navbar__cart--btn">
+            <div class="navbar__cart--img-box">
+              <img src="./images/shopping-bag.png" alt="cart">
+            </div>
+            <span>My Cart</span>
+          </button>
+        </div>
+
+        <!-- Cart -->
+        <div class="nav__cart--container">
+          <button class="nav__cart--btn-close">
+            <img src="./images/close-icon.png" alt="close" class="nav__cart--btn-close-img">
+          </button>
+          <div class="nav__cart--container-content">
+            <h4 class="nav__cart--container-title">Shopping cart</h4>
+
+            <div class="nav__cart--container-product-container">
+              <div class="nav__cart--container-product-img-box">
+                <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
+              </div>
+              <div class="nav__cart--container-product-details">
+                <h4 class="nav__cart--container-product-details-title">Product Title</h4>
+                <span class="nav__cart--container-product-details-new-price">$40.00</span>
+                <div class="nav__cart--container-product-input-box">
+                  <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
+                  <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
+                  <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
+                </div>
+              </div>
+              <button class="nav__cart--container-product-remove-btn">
+                <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
+              </button>
+            </div>
+
+            <div class="nav__cart--container-product-container">
+              <div class="nav__cart--container-product-img-box">
+                <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
+              </div>
+              <div class="nav__cart--container-product-details">
+                <h4 class="nav__cart--container-product-details-title">Product Title</h4>
+                <span class="nav__cart--container-product-details-new-price">$40.00</span>
+                <div class="nav__cart--container-product-input-box">
+                  <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
+                  <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
+                  <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
+                </div>
+              </div>
+              <button class="nav__cart--container-product-remove-btn">
+                <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
+              </button>
+            </div>
+
+          </div>
+
+          <div class="nav__cart--container-footer-content">
+
+            <div class="nav__cart--container-footer-subtotal-wrapper">
+              <h3 class="nav__cart--container-footer-subtotal-title">SUBTOTAL</h3>
+              <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
+            </div>
+
+            <div class="nav__cart--container-footer-subtotal-wrapper">
+              <h3 class="nav__cart--container-footer-subtotal-title">TOTAL</h3>
+              <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
+            </div>
+
+
+            <a href="#" class="nav__cart--container-footer-shipping-btn">
+              Continue Shopping
+            </a>
+            <a href="#" class="nav__cart--container-footer-shipping-btn">
+              Checkout
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section Hero -->
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__left">
+            <div class="hero__left--top">
+              <div class="hero__left--ratings">
+                <img src="./images/ratings-star.png" alt="rating">
+                <img src="./images/ratings-star.png" alt="rating">
+                <img src="./images/ratings-star.png" alt="rating">
+                <img src="./images/ratings-star.png" alt="rating">
+                <img src="./images/ratings-star.png" alt="rating">
+              </div>
+              <p class="hero__left--happy-customers">167,900+ Happy Customer</p>
+            </div>
+            <div class="hero__left--bottom">
+              <h1 class="hero__left--heading">Real, lasting
+                weight loss starts</h1>
+              <p class="hero__left--subtext">
+                PhenGold can help you finally achieve your health and weight loss goals
+              </p>
+              <a href="#" class="hero__left--link-btn">
+                <span>order now</span>
+                <img src="./images/right-arrow-bg.png" alt="right arrow">
+              </a>
+            </div>
+          </div>
+          <div class="hero__right">
+            <img src="./images/hero-img-home.png" alt="hero image">
+          </div>
+        </div>
+        <div class="hero__footer">
+          <div class="hero__footer--container">
+            <div class="hero__footer--left">
+              <h3 class="hero__footer--left-text">
+                Body’s natural fat-burning abilities
+              </h3>
+            </div>
+            <div class="hero__footer--right">
+              <img class="logo__Inc5000" src="./images/Inc5000_PrimaryLogo.png" alt="Inc5000">
+              <img class="logo__ministry" src="./images/ministry.png" alt="ministry">
+              <img class="logo__business" src="./images/business-insider.png" alt="business insider">
+              <img class="logo__newsweek" src="./images/newsweek-logo-png-transparent.png" alt="newsweek">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Category -->
+      <section class="shop__category">
+        <div class="shop__category--top">
+          <h3 class="shop__category--sub-title">SHOPY BY CATEGORY</h3>
+          <h1 class="shop__category--title">
+            Burn fat faster & more effectively
+          </h1>
+        </div>
+
+        <div class="shop__category--cards-container">
+
+          <div class="shop__category--card">
+            <div class="shop__category--card-left">
+              <img src="./images/category-product-1.png" alt="category">
+            </div>
+            <div class="shop__category--card-right">
+              <div class="shop__category--card-right-description">
+                <h2 class="shop__category--card-right-description-title">Hemorrhoids</h2>
+                <p class="shop__category--card-right-description-subtext">
+                  Multi-action formula enhances your body’s natural fat-burning abilities
+                </p>
+              </div>
+              <a class="shop__category--card-btn" href="#" target="_blank">
+                <span>Shop Now</span>
+                <img src="./images/right-arrow-bg.png" alt="arrow">
+              </a>
+            </div>
+          </div>
+
+          <div class="shop__category--card">
+            <div class="shop__category--card-left">
+              <img src="./images/category-product-2.png" alt="category">
+            </div>
+            <div class="shop__category--card-right">
+              <div class="shop__category--card-right-description">
+                <h2 class="shop__category--card-right-description-title">Sleeping</h2>
+                <p class="shop__category--card-right-description-subtext">
+                  Multi-action formula enhances your body’s natural fat-burning abilities
+                </p>
+              </div>
+              <a class="shop__category--card-btn" href="#" target="_blank">
+                <span>Shop Now</span>
+                <img src="./images/right-arrow-bg.png" alt="arrow">
+              </a>
+            </div>
+          </div>
+
+          <div class="shop__category--card">
+            <div class="shop__category--card-left">
+              <img src="./images/category-product-1.png" alt="category">
+            </div>
+            <div class="shop__category--card-right">
+              <div class="shop__category--card-right-description">
+                <h2 class="shop__category--card-right-description-title">Stress</h2>
+                <p class="shop__category--card-right-description-subtext">
+                  Multi-action formula enhances your body’s natural fat-burning abilities
+                </p>
+              </div>
+              <a class="shop__category--card-btn" href="#" target="_blank">
+                <span>Shop Now</span>
+                <img src="./images/right-arrow-bg.png" alt="arrow">
+              </a>
+            </div>
+          </div>
+
+          <div class="shop__category--card">
+            <div class="shop__category--card-left">
+              <img src="./images/category-product-1.png" alt="category">
+            </div>
+            <div class="shop__category--card-right">
+              <div class="shop__category--card-right-description">
+                <h2 class="shop__category--card-right-description-title">Unrin Infection</h2>
+                <p class="shop__category--card-right-description-subtext">
+                  Multi-action formula enhances your body’s natural fat-burning abilities
+                </p>
+              </div>
+              <a class="shop__category--card-btn" href="#" target="_blank">
+                <span>Shop Now</span>
+                <img src="./images/right-arrow-bg.png" alt="arrow">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Leader In The Store -->
+      <section class="leader">
+        <div class="leader__wrapper">
+          <div class="leader__left--container">
+            <h3 class="leader__sub--heading">
+              LEADER IN THE STORE
+            </h3>
+            <h2 class="leader__heading">
+              clinically proven ingredients helps you burn fat and keep the weight off for good
+            </h2>
+            <p class="leader__sub--text">
+              By increasing your metabolism, activating powerful fat-burning hormones and helping control hunger and
+              cravings, PhenGold can help you lose weight more quickly and more easily than through dieting and exercise
+              alone.
+            </p>
+            <a href="#" class="leader__link--btn">
+              <span>Order Now</span>
+              <img src="./images/right-arrow-brown.png" alt="arrow">
+            </a>
+          </div>
+          <div class="leader__right--container">
+            <img src="./images/leader-in-store.png" alt="leader in store">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Testimonial -->
+      <section class="testimonial">
+        <div class="testimonial__top--container">
+          <h3 class="testimonial__sub--heading">SHOPY BY CATEGORY</h3>
+          <h1 class="testimonial__heading">
+            Burn fat faster & more effectively
+          </h1>
+          <p class="testimonial__sub--text">
+            By increasing your metabolism, activating powerful fat-burning hormones and helping control hunger and
+            cravings,
+          </p>
+        </div>
+        <div class="testimonial__bottom--container">
+
+          <div class="testimonial__card">
+            <div class="testimonial__card--top">
+              <div class="testimonial__card--person-img-box">
+                <img src="./images/person-1.jpg" alt="person">
+              </div>
+              <div class="testimonial__card--person-details">
+                <span class="testimonial__card--person-name">
+                  Derek, Downingtown
+                </span>
+                <span class="testimonial__card--person-verified">
+                  Verified customer
+                </span>
+              </div>
+            </div>
+            <div class="testimonial__card--middle">
+              <h2 class="testimonial__card--title">
+                "A great product so far!"
+              </h2>
+              <p class="testimonial__card--msg">
+                I have immensely enjoyed the success since using this product. My cravings have been tamed and I’ve
+                enjoyed the increased levels of energy, competencies,
+              </p>
+            </div>
+            <div class="testimonial__card--footer">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card--top">
+              <div class="testimonial__card--person-img-box">
+                <img src="./images/person-2.jpg" alt="person">
+              </div>
+              <div class="testimonial__card--person-details">
+                <span class="testimonial__card--person-name">
+                  Derek, Downingtown
+                </span>
+                <span class="testimonial__card--person-verified">
+                  Verified customer
+                </span>
+              </div>
+            </div>
+            <div class="testimonial__card--middle">
+              <h2 class="testimonial__card--title">
+                "A great product so far!"
+              </h2>
+              <p class="testimonial__card--msg">
+                I have immensely enjoyed the success since using this product. My cravings have been tamed and I’ve
+                enjoyed the increased levels of energy, competencies,
+              </p>
+            </div>
+            <div class="testimonial__card--footer">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card--top">
+              <div class="testimonial__card--person-img-box">
+                <img src="./images/person-3.jpg" alt="person">
+              </div>
+              <div class="testimonial__card--person-details">
+                <span class="testimonial__card--person-name">
+                  Derek, Downingtown
+                </span>
+                <span class="testimonial__card--person-verified">
+                  Verified customer
+                </span>
+              </div>
+            </div>
+            <div class="testimonial__card--middle">
+              <h2 class="testimonial__card--title">
+                "A great product so far!"
+              </h2>
+              <p class="testimonial__card--msg">
+                I have immensely enjoyed the success since using this product. My cravings have been tamed and I’ve
+                enjoyed the increased levels of energy, competencies,
+              </p>
+            </div>
+            <div class="testimonial__card--footer">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+              <img src="./images/ratings-star.png" alt="rating">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section Latest Product -->
+      <section class="latest__product">
+
+        <div class="latest__product--top-content">
+          <h3 class="latest__product--sub-heading">LATEST PRODUCT</h3>
+          <h1 class="latest__product--heading">
+            It’s time to try Hemorrhids.
+          </h1>
+        </div>
+        <!-- Latest Product Slider -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="latest__product--card">
+                <div class="latest__product--card-img-box">
+                  <img class="latest__product--card-img" src="./images/blog-img.png" alt="product">
+                </div>
+                <div class="latest__product--card-title-box">
+                  <h2 class="latest__product--card-title">
+                    Hemorrhoids
+                  </h2>
+                </div>
+                <div class="latest__product--card-rating-price-box">
+                  <div class="latest__product--card-rating-box">
+                    <img src="./images/ratings-star.png" alt="rating">
+                    <div class="latest__product--card-rating-content">
+                      <span class="latest__product--card-rating">5.0</span>
+                      <span class="latest__product--card-rating-title">Rating</span>
+                    </div>
+                  </div>
+                  <div class="latest__product--card-price">
+                    <span class="latest__product--card-sale-price-text">Now Only</span>
+                    <span class="latest__product--card-sale-price">
+                      $59.99
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="latest__product--card-link-btn">
+                  <span class="latest__product--card-link-btn-text">Shop Now</span>
+                  <span class="latest__product--card-link-btn-icon">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+                <ul class="latest__product--card-shipping">
+                  <li class="latest__product--card-shipping-text">
+                    Free & Fast Shipping
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest__product--card">
+                <div class="latest__product--card-img-box">
+                  <img class="latest__product--card-img" src="./images/blog-img.png" alt="product">
+                </div>
+                <div class="latest__product--card-title-box">
+                  <h2 class="latest__product--card-title">
+                    Hemorrhoids
+                  </h2>
+                </div>
+                <div class="latest__product--card-rating-price-box">
+                  <div class="latest__product--card-rating-box">
+                    <img src="./images/ratings-star.png" alt="rating">
+                    <div class="latest__product--card-rating-content">
+                      <span class="latest__product--card-rating">5.0</span>
+                      <span class="latest__product--card-rating-title">Rating</span>
+                    </div>
+                  </div>
+                  <div class="latest__product--card-price">
+                    <span class="latest__product--card-sale-price-text">Now Only</span>
+                    <span class="latest__product--card-sale-price">
+                      $59.99
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="latest__product--card-link-btn">
+                  <span class="latest__product--card-link-btn-text">Shop Now</span>
+                  <span class="latest__product--card-link-btn-icon">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+                <ul class="latest__product--card-shipping">
+                  <li class="latest__product--card-shipping-text">
+                    Free & Fast Shipping
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest__product--card">
+                <div class="latest__product--card-img-box">
+                  <img class="latest__product--card-img" src="./images/blog-img.png" alt="product">
+                </div>
+                <div class="latest__product--card-title-box">
+                  <h2 class="latest__product--card-title">
+                    Hemorrhoids
+                  </h2>
+                </div>
+                <div class="latest__product--card-rating-price-box">
+                  <div class="latest__product--card-rating-box">
+                    <img src="./images/ratings-star.png" alt="rating">
+                    <div class="latest__product--card-rating-content">
+                      <span class="latest__product--card-rating">5.0</span>
+                      <span class="latest__product--card-rating-title">Rating</span>
+                    </div>
+                  </div>
+                  <div class="latest__product--card-price">
+                    <span class="latest__product--card-sale-price-text">Now Only</span>
+                    <span class="latest__product--card-sale-price">
+                      $59.99
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="latest__product--card-link-btn">
+                  <span class="latest__product--card-link-btn-text">Shop Now</span>
+                  <span class="latest__product--card-link-btn-icon">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+                <ul class="latest__product--card-shipping">
+                  <li class="latest__product--card-shipping-text">
+                    Free & Fast Shipping
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest__product--card">
+                <div class="latest__product--card-img-box">
+                  <img class="latest__product--card-img" src="./images/blog-img.png" alt="product">
+                </div>
+                <div class="latest__product--card-title-box">
+                  <h2 class="latest__product--card-title">
+                    Hemorrhoids
+                  </h2>
+                </div>
+                <div class="latest__product--card-rating-price-box">
+                  <div class="latest__product--card-rating-box">
+                    <img src="./images/ratings-star.png" alt="rating">
+                    <div class="latest__product--card-rating-content">
+                      <span class="latest__product--card-rating">5.0</span>
+                      <span class="latest__product--card-rating-title">Rating</span>
+                    </div>
+                  </div>
+                  <div class="latest__product--card-price">
+                    <span class="latest__product--card-sale-price-text">Now Only</span>
+                    <span class="latest__product--card-sale-price">
+                      $59.99
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="latest__product--card-link-btn">
+                  <span class="latest__product--card-link-btn-text">Shop Now</span>
+                  <span class="latest__product--card-link-btn-icon">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+                <ul class="latest__product--card-shipping">
+                  <li class="latest__product--card-shipping-text">
+                    Free & Fast Shipping
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest__product--card">
+                <div class="latest__product--card-img-box">
+                  <img class="latest__product--card-img" src="./images/blog-img.png" alt="product">
+                </div>
+                <div class="latest__product--card-title-box">
+                  <h2 class="latest__product--card-title">
+                    Hemorrhoids
+                  </h2>
+                </div>
+                <div class="latest__product--card-rating-price-box">
+                  <div class="latest__product--card-rating-box">
+                    <img src="./images/ratings-star.png" alt="rating">
+                    <div class="latest__product--card-rating-content">
+                      <span class="latest__product--card-rating">5.0</span>
+                      <span class="latest__product--card-rating-title">Rating</span>
+                    </div>
+                  </div>
+                  <div class="latest__product--card-price">
+                    <span class="latest__product--card-sale-price-text">Now Only</span>
+                    <span class="latest__product--card-sale-price">
+                      $59.99
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="latest__product--card-link-btn">
+                  <span class="latest__product--card-link-btn-text">Shop Now</span>
+                  <span class="latest__product--card-link-btn-icon">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+                <ul class="latest__product--card-shipping">
+                  <li class="latest__product--card-shipping-text">
+                    Free & Fast Shipping
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+
+        <!-- Section Favourite -->
+
+        <div class="favourite">
+          <div class="favourite__warapper">
+
+            <div class="favourite__left--container">
+              <div class="favourite__left--container-img-box">
+                <img src="./images/favourite.png" alt="">
+                <button class="favourite__left--container-btn">
+                  <img src="./images/play-btn.png" alt="play">
+                </button>
+              </div>
+            </div>
+
+            <div class="favourite__right--container">
+              <div class="favourite__right--container-content">
+                <h3 class="favourite__right--container-sub-heading">
+                  GET YOUR FAVOURIT FOR LESS
+                </h3>
+                <h1 class="favourite__right--container-heading">
+                  Real, lasting
+                  weight loss starts
+                </h1>
+                <p class="favourite__right--container-description">
+                  PhenGold can help you finally achieve your health and weight loss goals
+                </p>
+                <a href="#" class="favourite__right--container-link-btn">
+                  <span class="favourite__right--container-link-btn-text">
+                    Learn More
+                  </span>
+                  <span class="favourite__right--container-link-btn-img">
+                    <img src="./images/right-arrow-bg.png" alt="arrow">
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Section Blog -->
+      <section class="blog">
+        <div class="blog__top--container">
+          <h3 class="blog__top--container-sub-heading">
+            LATEST NEWS * ARTICLES
+          </h3>
+          <h1 class="blog__top--container-heading">
+            Learn from our Experts
+          </h1>
+        </div>
+        <div class="blog__bottom--container">
+
+          <div class="blog__card--container">
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+          </div>
+
+          <div class="blog__card--container">
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+            <a href="#" class="blog__card">
+              <div class="blog__card--img-box">
+                <img src="./images/blog-img.png" alt="blog img">
+              </div>
+              <h2 class="blog__title">
+                Weight loss supplements
+                Makret
+              </h2>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Video Popup -->
+      <div id="light">
+        <button class="boxclose" id="boxclose"></button>
+        <video class="video-popup-content" controls autoplay>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div id="fade" class="video-overlay"></div>
+
+      <!-- Section Footer -->
+      <footer class="footer">
+        <div class="footer__top--wrapper">
+
+          <div class="footer__top--left-container">
+
+            <div class="footer__top--support-content">
+              <div class="footer__top--support-img-box">
+                <img src="./images/send-mail.png" alt="email">
+              </div>
+              <div class="footer__top--support-info-box">
+                <p class="footer__top--support-title">
+                  Support
+                </p>
+                <p class="footer__top--support-email">
+                  Info@domain.com
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__top--contact-content">
+              <div class="footer__top--contact-img-box">
+                <img src="./images/telephone.png" alt="phone">
+              </div>
+              <div class="footer__top--contact-info-box">
+                <p class="footer__top--contact-title">
+                  Call us today
+                </p>
+                <p class="footer__top--contact-email">
+                  123-456-7890
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__top--follow">
+              <h4 class="footer__top--follow-title">
+                Follow us
+              </h4>
+              <div class="footer__top--follow-links">
+                <a href="#" class="footer__top--follow-link">
+                  <img class="footer__top--follow-linkedin-img" src="./images/linkedin (1).png" alt="linkedin">
+                </a>
+                <a href="#" class="footer__top--follow-link">
+                  <img class="footer__top--follow-youtube-img" src="./images/youtube.png" alt="youtube">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="footer__top--right-container">
+
+            <div class="footer__weightloss--links">
+              <h3 class="footer__weightloss--links-title">Weight Loss</h3>
+              <a href="#" class="footer__weightloss--link">
+                Weight Loss
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Diet and Nutrition
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Health and Fitness
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Motivation
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Supplements
+              </a>
+            </div>
+
+            <div class="footer__resources--links">
+              <h3 class="footer__resources--links-title">Resources</h3>
+              <a href="#" class="footer__resources--link">
+                Shipping Information
+              </a>
+              <a href="#" class="footer__resources--link">
+                Returns & Refunds
+              </a>
+              <a href="#" class="footer__resources--link">
+                Contact Us
+              </a>
+            </div>
+
+            <div class="footer__company--links">
+              <h3 class="footer__company--links-title">Company</h3>
+              <a href="#" class="footer__company--link">
+                Terms & Conditions
+              </a>
+              <a href="#" class="footer__company--link">
+                Privacy Policy
+              </a>
+              <a href="#" class="footer__company--link">
+                Affiliate Network
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer__bottom--wrapper">
+          <p class="footer__bottom--info-text">
+            *These statements have not been evaluated by the Food and Drug Administration. These products are not
+            intended to diagnose, treat, cure, or prevent any disease. These products do not require a prescription or
+            doctor approval as they are herbal and do not contain any prescription ingredients. Results in the
+            Testimonials may not be typical and your results may vary. Not all people will obtain the same results.
+            These products are intended to be used in conjunction with a healthy diet and regular exercise. Consult your
+            physician before starting any diet, exercise program or taking any supplements to avoid any health issues.
+          </p>
+          <p class="footer__bottom--info-text">
+            ** Money back guarantee does not apply to the one month supply. Refund excludes shipping costs.
+          </p>
+
+        </div>
+
+        <div class="footer__copyright-box">
+          <p class="footer__copyright-text">
+            © 2023 Health Nutrition Limited.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
