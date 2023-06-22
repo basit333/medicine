@@ -81,7 +81,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
   },
 });
@@ -207,6 +207,7 @@ document.addEventListener("click", function (event) {
 const videoBtn = document.querySelector(".favourite__left--container-btn");
 const videoCloseBtn = document.querySelector(".boxclose");
 const fadeOverlay = document.querySelector("#fade");
+const videoPlayer = document.getElementById("light");
 
 videoBtn.addEventListener("click", lightbox_open);
 videoCloseBtn.addEventListener("click", lightbox_close);
@@ -220,4 +221,11 @@ function lightbox_open() {
 function lightbox_close() {
   document.getElementById("light").style.display = "none";
   document.getElementById("fade").style.display = "none";
+
+  // Stop video playback
+  const videoIframe = document.querySelector(".video-popup-content");
+  videoIframe.src = videoIframe.src; // Resets the video source and stops playback
+
+  // Mute the video
+  videoIframe.muted = true;
 }
