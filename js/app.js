@@ -33,6 +33,7 @@ Swiper Slider
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -53,6 +54,34 @@ var swiper = new Swiper(".mySwiper", {
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
+    },
+  },
+});
+
+//
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
   },
 });
@@ -184,16 +213,11 @@ videoCloseBtn.addEventListener("click", lightbox_close);
 fadeOverlay.addEventListener("click", lightbox_close);
 
 function lightbox_open() {
-  const lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
   document.getElementById("light").style.display = "block";
   document.getElementById("fade").style.display = "block";
-  lightBoxVideo.play();
 }
 
 function lightbox_close() {
-  const lightBoxVideo = document.getElementById("VisaChipCardVideo");
   document.getElementById("light").style.display = "none";
   document.getElementById("fade").style.display = "none";
-  lightBoxVideo.pause();
 }
