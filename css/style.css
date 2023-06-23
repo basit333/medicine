@@ -156,6 +156,20 @@ body {
   background: #F7F6F4;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+button {
+  font-style: italic;
+}
+
 .main__wrapper {
   padding: 20px 60px 0 60px;
 }
