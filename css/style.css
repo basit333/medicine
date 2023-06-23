@@ -1,119 +1,8 @@
 /* Fonts */
 @font-face {
   font-family: 'Filson Pro';
-  src: url('FilsonPro-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-RegularItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-HeavyItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro Book';
-  src: url('FilsonPro-Book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-Heavy.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro Book';
-  src: url('FilsonPro-BookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('FilsonPro-Bold.woff') format('woff');
+  src: url('FilsonPro-Bold.woff2') format('woff2'),
+    url('FilsonPro-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -121,9 +10,136 @@
 
 @font-face {
   font-family: 'Filson Pro';
-  src: url('FilsonPro-Light.woff') format('woff');
+  src: url('FilsonPro-BoldItalic.woff2') format('woff2'),
+    url('FilsonPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Black.woff2') format('woff2'),
+    url('FilsonPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-BlackItalic.woff2') format('woff2'),
+    url('FilsonPro-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Heavy.woff2') format('woff2'),
+    url('FilsonPro-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-HeavyItalic.woff2') format('woff2'),
+    url('FilsonPro-HeavyItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro Book';
+  src: url('FilsonPro-Book.woff2') format('woff2'),
+    url('FilsonPro-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro Book';
+  src: url('FilsonPro-BookItalic.woff2') format('woff2'),
+    url('FilsonPro-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Light.woff2') format('woff2'),
+    url('FilsonPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-LightItalic.woff2') format('woff2'),
+    url('FilsonPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-RegularItalic.woff2') format('woff2'),
+    url('FilsonPro-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Regular.woff2') format('woff2'),
+    url('FilsonPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Thin.woff2') format('woff2'),
+    url('FilsonPro-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-Medium.woff2') format('woff2'),
+    url('FilsonPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-MediumItalic.woff2') format('woff2'),
+    url('FilsonPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('FilsonPro-ThinItalic.woff2') format('woff2'),
+    url('FilsonPro-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -159,6 +175,7 @@ body {
   justify-content: space-between;
   gap: 20px;
   list-style: none;
+  /* font-style: italic; */
 }
 
 .navbar__link {
@@ -257,6 +274,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #1D1E1F;
+  /* font-style: italic; */
 }
 
 .navbar__account--dropdown {
@@ -540,6 +558,7 @@ body {
   line-height: 29px;
   font-weight: 400;
   color: #F7F6F4;
+  /* font-style: italic; */
 }
 
 /* .hero__left--bottom {} */
@@ -550,6 +569,7 @@ body {
   font-weight: 400;
   color: #F7F6F4;
   margin-bottom: 20px;
+  /* font-style: italic; */
 }
 
 .hero__left--subtext {
@@ -558,6 +578,7 @@ body {
   font-weight: 300;
   color: #FFFFFF;
   margin-bottom: 20px;
+  /* font-style: italic; */
 }
 
 .hero__left--link-btn {
@@ -574,6 +595,7 @@ body {
   text-transform: uppercase;
   border-radius: 32px;
   max-width: 295px;
+  /* font-style: italic; */
 }
 
 /* .hero__left--link-btn span {} */
@@ -626,6 +648,7 @@ body {
   display: inline-block;
   width: 200px;
   position: relative;
+  /* font-style: italic; */
 }
 
 .hero__footer--left-text::after {
@@ -688,6 +711,7 @@ body {
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  /* font-style: italic; */
 }
 
 .shop__category--sub-title::after {
@@ -707,6 +731,7 @@ body {
   line-height: 52px;
   font-weight: 400;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 .shop__category--cards-container {
@@ -758,6 +783,7 @@ body {
   font-weight: 400;
   color: #1B273E;
   margin-bottom: 6px;
+  /* font-style: italic; */
 }
 
 .shop__category--card-right-description-subtext {
@@ -765,6 +791,7 @@ body {
   line-height: 27px;
   font-weight: 300;
   color: #4F535B;
+  /* font-style: italic; */
 }
 
 .shop__category--card-btn {
@@ -784,6 +811,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
+  /* font-style: italic; */
 }
 
 .shop__category--card-btn img {
@@ -825,6 +853,7 @@ body {
   margin-bottom: 18px;
   position: relative;
   text-transform: uppercase;
+  /* font-style: italic; */
 }
 
 .leader__sub--heading::after {
@@ -844,6 +873,7 @@ body {
   font-weight: 400;
   color: #1B273E;
   margin-bottom: 30px;
+  /* font-style: italic; */
 }
 
 .leader__sub--text {
@@ -854,6 +884,7 @@ body {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #F0EFED;
+  /* font-style: italic; */
 }
 
 .leader__link--btn {
@@ -867,6 +898,7 @@ body {
   color: #FCFDFD;
   max-width: 295px;
   text-transform: uppercase;
+  /* font-style: italic; */
 }
 
 .leader__link--btn img {
@@ -923,6 +955,7 @@ body {
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  /* font-style: italic; */
 }
 
 .testimonial__sub--heading::after {
@@ -943,6 +976,7 @@ body {
   font-weight: 400;
   color: #1B273E;
   margin-bottom: 20px;
+  /* font-style: italic; */
 }
 
 .testimonial__sub--text {
@@ -950,6 +984,7 @@ body {
   line-height: 31px;
   font-weight: 300;
   color: #4F535B;
+  /* font-style: italic; */
 }
 
 .testimonial__bottom--container {
@@ -1000,6 +1035,7 @@ body {
   line-height: 29px;
   font-weight: 300;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 .testimonial__card--person-verified {
@@ -1008,6 +1044,7 @@ body {
   line-height: 29px;
   font-weight: 300;
   color: #4F535B;
+  /* font-style: italic; */
 }
 
 .testimonial__card--middle {
@@ -1023,10 +1060,11 @@ body {
 }
 
 .testimonial__card--msg {
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 300;
   color: #4F535B;
+  /* font-style: italic; */
 }
 
 .testimonial__card--footer {
@@ -1064,6 +1102,7 @@ body {
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  /* font-style: italic; */
 }
 
 .latest__product--sub-heading::after {
@@ -1083,6 +1122,7 @@ body {
   line-height: 52px;
   font-weight: 400;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 /* Swiper Slider */
@@ -1131,14 +1171,14 @@ body {
 
 .swiper-button-next:after {
   content: "\279C" !important;
-  color: #173F89 !important;
+  color: #173F89;
   font-weight: 400;
 }
 
 .swiper-button-prev:after {
   content: "\279C" !important;
   transform: rotate(180deg);
-  color: #173F89 !important;
+  color: #173F89;
   font-weight: 400;
 }
 
@@ -1178,6 +1218,7 @@ body {
   font-weight: 400;
   line-height: 38px;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 .latest__product--card-rating-price-box {
@@ -1210,6 +1251,7 @@ body {
   font-weight: 400;
   color: #1B273E;
   margin-bottom: 2px;
+  /* font-style: italic; */
 }
 
 .latest__product--card-rating-title {
@@ -1218,6 +1260,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 .latest__product--card-price {
@@ -1228,7 +1271,7 @@ body {
   border-radius: 38px;
   padding: 12px 0;
   height: 100%;
-  width: 194px;
+  width: 55%;
   text-align: center;
 }
 
@@ -1238,6 +1281,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   color: #173F89;
+  /* font-style: italic; */
 }
 
 .latest__product--card-sale-price {
@@ -1246,6 +1290,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: #173F89;
+  /* font-style: italic; */
 }
 
 .latest__product--card-link-btn {
@@ -1270,6 +1315,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   font-weight: 500;
+  /* font-style: italic; */
 }
 
 .latest__product--card-link-btn-icon {
@@ -1293,6 +1339,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   color: #1B273E;
+  /* font-style: italic; */
 }
 
 .latest__product--card-shipping-text::marker {
@@ -1591,6 +1638,7 @@ body {
 .footer__top--support-content,
 .footer__top--contact-content {
   display: flex;
+  align-items: center;
   gap: 18px;
 }
 
@@ -1770,13 +1818,13 @@ body {
   }
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1600px) {
   .main__wrapper {
-    padding: 30px;
+    padding: 20px;
   }
 
   .hero__wrapper {
-    padding-inline: 20px;
+    padding-inline: 50px;
   }
 
   .hero__left--top {
@@ -1826,15 +1874,15 @@ body {
   }
 
   .shop__category--cards-container {
-    padding-inline: 20px;
+    padding-inline: 50px;
   }
 
   .leader__wrapper {
-    padding-inline: 20px;
+    padding-inline: 50px;
   }
 
   .testimonial__bottom--container {
-    padding: 0 20px;
+    padding: 0 50px;
   }
 
   .favourite__left--container-btn {
@@ -1845,11 +1893,35 @@ body {
   }
 
   .blog__card--container {
-    padding: 55px 20px 0 20px;
+    padding: 55px 50px 0 50px;
   }
 
   .footer__wrapper {
-    padding: 0 20px;
+    padding: 0 50px;
+  }
+
+  .swiper {
+    max-width: 1180px;
+  }
+
+  .swiper-button-prev {
+    left: 30px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .swiper-button-next {
+    right: 30px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .swiper-button-next:after {
+    font-size: 30px;
+  }
+
+  .swiper-button-prev:after {
+    font-size: 30px;
   }
 }
 
@@ -1996,6 +2068,18 @@ body {
   .footer__top--left-container {
     width: 30%;
   }
+
+  .swiper {
+    max-width: 1024px;
+  }
+
+  .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2016,6 +2100,10 @@ body {
 
   .navbar__cart--btn span {
     display: none;
+  }
+
+  .navbar__account--dropdown {
+    left: -55px;
   }
 }
 
@@ -2087,6 +2175,7 @@ body {
 
   .leader__right--container {
     width: 100%;
+    height: auto;
   }
 
   .favourite__warapper {
@@ -2178,9 +2267,254 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .navbar__logo--wrapper {
+    width: 150px;
+  }
+
+  .navbar__btn--wrapper {
+    gap: 10px;
+  }
+
+  .hero__left--top {
+    flex-wrap: wrap;
+  }
+
+  .hero__left--happy-customers {
+    font-size: 16px;
+  }
+
+  .hero__left--heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .hero__left--subtext {
+    font-size: 16px;
+  }
+
+  .hero__footer--container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero__footer--left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__footer--left-text::after {
+    width: 100%;
+  }
+
+  .hero__footer--right {
+    width: 100%;
+  }
+
+  .hero__footer {
+    padding: 30px 0;
+  }
+
+  .shop__category--card {
+    flex-direction: column;
+  }
+
+  .shop__category--card-left {
+    width: 100%;
+  }
+
+  .shop__category--card-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .shop__category--card-right-description-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .shop__category--card-right-description-subtext {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .shop__category--card-btn img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .shop__category--card-btn {
+    padding: 14px 20px 14px 20px;
+  }
+
+  .shop__category {
+    padding: 30px 0;
+  }
+
+  .blog {
+    padding: 30px 0;
+  }
+
+  .blog__card {
+    width: 100%;
+  }
+
+  .blog__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .leader {
+    padding: 30px 0;
+  }
+
+  .testimonial {
+    padding: 30px 0;
+  }
+
+  .latest__product {
+    padding-top: 30px;
+  }
+
+  .swiper {
+    height: 680px;
+  }
+}
+
 @media (max-width: 644px) {
   .nav__cart--container {
     width: 100%;
+  }
+
+  .hero {
+    min-height: 1070px;
+  }
+
+  .hero__footer--right {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .shop__category--title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .leader__heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .testimonial__card {
+    padding: 33px 30px 52px 30px;
+  }
+
+  .testimonial__top--container {
+    margin: 0 auto 50px auto;
+  }
+
+  .testimonial__heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .testimonial__card--top {
+    flex-direction: column;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .testimonial__card--person-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .testimonial__card--person-verified {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .testimonial__card--title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .testimonial__card--msg {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .testimonial__card--footer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .latest__product--heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .favourite__left--container-btn {
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    right: 100px;
+  }
+
+  .favourite__right--container-heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .favourite__right--container-link-btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 20px;
+  }
+
+  .blog__top--container-heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .footer__top--right-container {
+    flex-direction: column;
+  }
+
+  .footer__weightloss--links {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer__resources--links {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer__company--links {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer__top--support-email {
+    word-break: break-all;
+  }
+
+  .latest__product--card-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .latest__product--card-sale-price {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .latest__product--card-rating {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
