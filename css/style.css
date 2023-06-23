@@ -2387,6 +2387,10 @@ body {
     width: 100%;
   }
 
+  .hero__wrapper {
+    padding-inline: 30px;
+  }
+
   .hero {
     min-height: 1070px;
   }
@@ -2474,6 +2478,10 @@ body {
     padding: 16px 20px;
   }
 
+  .blog__card--container {
+    padding: 55px 25px 0 25px;
+  }
+
   .blog__top--container-heading {
     font-size: 30px;
     line-height: 36px;
@@ -2516,10 +2524,43 @@ body {
     font-size: 20px;
     line-height: 25px;
   }
+
+  .shop__category--cards-container {
+    padding-inline: 25px;
+  }
+
+  .testimonial__bottom--container {
+    padding: 0 25px;
+  }
 }
 
 @media (max-width: 475px) {
   .nav__cart--container-product-details {
     padding: 0 20px 0 0;
+  }
+
+  .navbar__logo--wrapper {
+    width: 100px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar__account--btn {
+    padding: 5px;
+  }
+
+  .navbar__account--btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .navbar__cart--img-box {
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar__cart--img-box img {
+    width: 14px;
+    height: 15px;
   }
 }
