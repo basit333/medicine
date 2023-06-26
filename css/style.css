@@ -1981,16 +1981,16 @@ body {
 
 .best--seller-badge {
   width: 250px;
-  height: 50px;
+  height: 38px;
   position: absolute;
-  top: -54px;
+  top: -48px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .best--seller-badge img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 
@@ -2310,6 +2310,46 @@ body {
   .swiper-button-prev:after {
     font-size: 30px;
   }
+
+  .category__hero--wrapper {
+    padding-inline: 50px;
+  }
+
+  .category__hero--left-heading {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .category__hero--left-subtext {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .category__products--container {
+    padding-inline: 50px;
+  }
+
+  .category__products--details-box {
+    padding-inline: 50px;
+  }
+
+  .improves__text--with-img-container {
+    padding-inline: 50px;
+  }
+
+  .improves__img--with-text-container {
+    padding-inline: 50px;
+  }
+
+  .improves__text--heading {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .improves__text--sub-text {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 @media (max-width: 1335px) {
@@ -2471,6 +2511,10 @@ body {
   .contact__wrapper {
     padding-inline: 50px;
   }
+
+  .category__products--card {
+    width: 45%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2496,12 +2540,19 @@ body {
   .navbar__account--dropdown {
     left: -55px;
   }
+
+  .category__hero--cta {
+    margin-top: 0;
+  }
+
+  .category__hero--cta-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1025px) {
-  .hero {
-    /* min-height: 970px; */
-  }
 
   .hero__wrapper {
     flex-direction: column;
@@ -2602,6 +2653,40 @@ body {
   .contact__form--container {
     width: 100%;
   }
+
+  .category__hero--wrapper {
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .category__hero--left-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .category__hero--right-container {
+    width: 100%;
+  }
+
+  .improves__text--with-img-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .improves__text--content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .improves__text--img {
+    width: 100%;
+  }
+
+  .improves__img--with-text-container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2669,6 +2754,13 @@ body {
     border: 0;
   }
 }
+
+@media (max-width: 821px) {
+  .category__products--card {
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 768px) {
 
