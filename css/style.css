@@ -2845,6 +2845,10 @@ body {
     padding: 80px 30px;
   }
 
+  .contact {
+    padding: 50px 20px;
+  }
+
   .contact__form--heading {
     font-size: 30px;
     line-height: 40px;
