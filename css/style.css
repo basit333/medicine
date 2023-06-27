@@ -1162,9 +1162,9 @@ body {
 }
 
 .latest__product--card-title {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 34px;
   color: #1B273E;
 }
 
@@ -1185,14 +1185,14 @@ body {
 }
 
 .latest__product--card-rating-box img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .latest__product--card-rating {
   display: block;
-  font-size: 22px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 400;
   color: #1B273E;
   margin-bottom: 2px;
@@ -1214,7 +1214,7 @@ body {
   border-radius: 38px;
   padding: 10px 0;
   height: 100%;
-  width: 55%;
+  width: 50%;
   text-align: center;
 }
 
@@ -1228,7 +1228,7 @@ body {
 
 .latest__product--card-sale-price {
   display: block;
-  font-size: 27px;
+  font-size: 22px;
   line-height: 30px;
   font-weight: 400;
   color: #173F89;
@@ -1275,7 +1275,7 @@ body {
 }
 
 .latest__product--card-shipping-text {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #1B273E;
@@ -1849,7 +1849,6 @@ body {
 
 .category__products--container {
   display: flex;
-  justify-content: space-between;
   gap: 48px;
   flex-wrap: wrap;
   max-width: 1350px;
@@ -1860,7 +1859,7 @@ body {
 }
 
 .category__products--card {
-  width: 30%;
+  width: 22%;
 }
 
 .category__products--details-box {
@@ -1893,10 +1892,10 @@ body {
 }
 
 .best--seller-badge {
-  width: 250px;
+  width: 200px;
   height: 38px;
   position: absolute;
-  top: -48px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2282,6 +2281,12 @@ body {
   } */
 }
 
+@media (max-width: 1300px) {
+  .category__products--card {
+    width: 45%;
+  }
+}
+
 @media (max-width: 1280px) {
 
   .navbar__links--wrapper {
@@ -2419,10 +2424,6 @@ body {
 
   .swiper-button-next {
     right: 5px;
-  }
-
-  .category__products--card {
-    width: 45%;
   }
 }
 
@@ -2654,11 +2655,6 @@ body {
 
   .footer__top--follow {
     border: 0;
-  }
-
-  .best--seller-badge {
-    width: 200px;
-    top: -40px;
   }
 }
 
@@ -2989,16 +2985,11 @@ body {
   }
 
   .latest__product--card-title {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  .latest__product--card-sale-price {
     font-size: 22px;
     line-height: 30px;
   }
 
-  .latest__product--card-rating {
+  .latest__product--card-sale-price {
     font-size: 20px;
     line-height: 25px;
   }
@@ -3012,11 +3003,7 @@ body {
   }
 
   .category__products--container {
-    padding-inline: 10px;
-  }
-
-  .latest__product--card-price {
-    width: 50%;
+    padding-inline: 30px;
   }
 }
 
