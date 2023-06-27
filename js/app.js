@@ -1,18 +1,18 @@
 /*
 ------------------------------
-Swiper Slider
+Swiper Slider Products
 ------------------------------
 */
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".productSlider", {
+  slidesPerView: 1,
   loop: true,
   scrollbar: {
     el: ".swiper-scrollbar",
-    // hide: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next.product--btn-next",
+    prevEl: ".swiper-button-prev.product--btn-prev",
   },
   breakpoints: {
     640: {
@@ -32,9 +32,42 @@ var swiper = new Swiper(".mySwiper", {
 
 /*
 ------------------------------
+Swiper Slider Testimonials
+------------------------------
+*/
+
+var swiper = new Swiper(".testimonialSlider", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next.testimonial--next",
+    prevEl: ".swiper-button-prev.testimonial--prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+
+/*
+------------------------------
         Mobile Navbar
 ------------------------------
 */
+
 // Mobile Navbar Variables
 const navOpenBtn = document.querySelector(".nav__menu--btn-open");
 const navCloseBtn = document.querySelector(".nav__menu--btn-close");
@@ -78,6 +111,7 @@ if (cartCloseBtn) {
           Cart input
 ------------------------------
 */
+
 // Get the input element and buttons
 const cartInputs = document.querySelectorAll(".nav__cart--container-product-input");
 const cartMinusBtns = document.querySelectorAll(".nav__cart--container-product-input-minus-btn");

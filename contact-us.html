@@ -13,328 +13,325 @@
   </head>
 
   <body>
-    <!-- Main Container -->
-    <main class="main__wrapper">
 
-      <!-- Navbar -->
-      <nav class="navbar">
-        <ul class="navbar__links--wrapper">
-          <li class="navbar__link">
-            <a href="#">TESTIMONIALS</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar__links--wrapper">
+        <li class="navbar__link">
+          <a href="#">TESTIMONIALS</a>
+        </li>
+        <li class="navbar__link">
+          <a href="./category.html">Category</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#">PACKAGES</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#">FAQS</a>
+        </li>
+      </ul>
+
+      <!-- Mobie Nav -->
+      <button class="nav__menu--btn-open">
+        <img src="./images/hamburger.png" alt="hamburger icon" class="nav__menu--btn-open-img">
+      </button>
+      <!-- Mobile Nav Links -->
+      <div class="mobile__nav--links">
+        <ul class="mobile__nav--items">
+          <li class="mobile__nav--item">
+            <a href="#" class="mobile__nav--item-link">TESTIMONIALS</a>
           </li>
-          <li class="navbar__link">
-            <a href="./category.html">Category</a>
+          <li class="mobile__nav--item">
+            <a href="#" class="mobile__nav--item-link">INGREDIENTS</a>
           </li>
-          <li class="navbar__link">
-            <a href="#">PACKAGES</a>
+          <li class="mobile__nav--item">
+            <a href="#" class="mobile__nav--item-link">PACKAGES</a>
           </li>
-          <li class="navbar__link">
-            <a href="#">FAQS</a>
+          <li class="mobile__nav--item">
+            <a href="#" class="mobile__nav--item-link">FAQS</a>
+          </li>
+        </ul>
+        <button class="nav__menu--btn-close">
+          <img src="./images/close-icon.png" alt="menu close" class="nav__menu--btn-close-img">
+        </button>
+      </div>
+
+      <div class="navbar__logo--wrapper">
+        <a href="./home.html">
+          <img class="navbar__logo--img" src="./images/logo-header.png" alt="Svalbaroi">
+        </a>
+      </div>
+      <div class="navbar__btn--wrapper">
+        <button class="navbar__account--btn">
+          <img src="./images/icon-account.png" alt="account">
+          <span>My Account</span>
+        </button>
+
+        <!-- Account DropDown -->
+        <ul class="navbar__account--dropdown">
+          <li class="navbar__account--dropdown-link">
+            <a href="#">Login</a>
+          </li>
+          <li class="navbar__account--dropdown-link">
+            <a href="#">Signup</a>
           </li>
         </ul>
 
-        <!-- Mobie Nav -->
-        <button class="nav__menu--btn-open">
-          <img src="./images/hamburger.png" alt="hamburger icon" class="nav__menu--btn-open-img">
+        <button class="navbar__cart--btn">
+          <div class="navbar__cart--img-box">
+            <img src="./images/shopping-bag.png" alt="cart">
+          </div>
+          <span>My Cart</span>
         </button>
-        <!-- Mobile Nav Links -->
-        <div class="mobile__nav--links">
-          <ul class="mobile__nav--items">
-            <li class="mobile__nav--item">
-              <a href="#" class="mobile__nav--item-link">TESTIMONIALS</a>
-            </li>
-            <li class="mobile__nav--item">
-              <a href="#" class="mobile__nav--item-link">INGREDIENTS</a>
-            </li>
-            <li class="mobile__nav--item">
-              <a href="#" class="mobile__nav--item-link">PACKAGES</a>
-            </li>
-            <li class="mobile__nav--item">
-              <a href="#" class="mobile__nav--item-link">FAQS</a>
-            </li>
-          </ul>
-          <button class="nav__menu--btn-close">
-            <img src="./images/close-icon.png" alt="menu close" class="nav__menu--btn-close-img">
-          </button>
+      </div>
+
+      <!-- Cart -->
+      <div class="nav__cart--container">
+        <button class="nav__cart--btn-close">
+          <img src="./images/close-icon.png" alt="close" class="nav__cart--btn-close-img">
+        </button>
+        <div class="nav__cart--container-content">
+          <h4 class="nav__cart--container-title">Shopping cart</h4>
+
+          <div class="nav__cart--container-product-container">
+            <div class="nav__cart--container-product-img-box">
+              <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
+            </div>
+            <div class="nav__cart--container-product-details">
+              <h4 class="nav__cart--container-product-details-title">Product Title</h4>
+              <span class="nav__cart--container-product-details-new-price">$40.00</span>
+              <div class="nav__cart--container-product-input-box">
+                <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
+                <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
+                <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
+              </div>
+            </div>
+            <button class="nav__cart--container-product-remove-btn">
+              <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
+            </button>
+          </div>
+
+          <div class="nav__cart--container-product-container">
+            <div class="nav__cart--container-product-img-box">
+              <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
+            </div>
+            <div class="nav__cart--container-product-details">
+              <h4 class="nav__cart--container-product-details-title">Product Title</h4>
+              <span class="nav__cart--container-product-details-new-price">$40.00</span>
+              <div class="nav__cart--container-product-input-box">
+                <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
+                <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
+                <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
+              </div>
+            </div>
+            <button class="nav__cart--container-product-remove-btn">
+              <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
+            </button>
+          </div>
+
         </div>
 
-        <div class="navbar__logo--wrapper">
-          <a href="./home.html">
-            <img class="navbar__logo--img" src="./images/logo-header.png" alt="Svalbaroi">
+        <div class="nav__cart--container-footer-content">
+
+          <div class="nav__cart--container-footer-subtotal-wrapper">
+            <h3 class="nav__cart--container-footer-subtotal-title">SUBTOTAL</h3>
+            <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
+          </div>
+
+          <div class="nav__cart--container-footer-subtotal-wrapper">
+            <h3 class="nav__cart--container-footer-subtotal-title">TOTAL</h3>
+            <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
+          </div>
+
+
+          <a href="#" class="nav__cart--container-footer-shipping-btn">
+            Continue Shopping
+          </a>
+          <a href="#" class="nav__cart--container-footer-shipping-btn">
+            Checkout
           </a>
         </div>
-        <div class="navbar__btn--wrapper">
-          <button class="navbar__account--btn">
-            <img src="./images/icon-account.png" alt="account">
-            <span>My Account</span>
-          </button>
+      </div>
+    </nav>
 
-          <!-- Account DropDown -->
-          <ul class="navbar__account--dropdown">
-            <li class="navbar__account--dropdown-link">
-              <a href="#">Login</a>
-            </li>
-            <li class="navbar__account--dropdown-link">
-              <a href="#">Signup</a>
-            </li>
-          </ul>
-
-          <button class="navbar__cart--btn">
-            <div class="navbar__cart--img-box">
-              <img src="./images/shopping-bag.png" alt="cart">
-            </div>
-            <span>My Cart</span>
-          </button>
-        </div>
-
-        <!-- Cart -->
-        <div class="nav__cart--container">
-          <button class="nav__cart--btn-close">
-            <img src="./images/close-icon.png" alt="close" class="nav__cart--btn-close-img">
-          </button>
-          <div class="nav__cart--container-content">
-            <h4 class="nav__cart--container-title">Shopping cart</h4>
-
-            <div class="nav__cart--container-product-container">
-              <div class="nav__cart--container-product-img-box">
-                <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
-              </div>
-              <div class="nav__cart--container-product-details">
-                <h4 class="nav__cart--container-product-details-title">Product Title</h4>
-                <span class="nav__cart--container-product-details-new-price">$40.00</span>
-                <div class="nav__cart--container-product-input-box">
-                  <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
-                  <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
-                  <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
-                </div>
-              </div>
-              <button class="nav__cart--container-product-remove-btn">
-                <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
-              </button>
-            </div>
-
-            <div class="nav__cart--container-product-container">
-              <div class="nav__cart--container-product-img-box">
-                <img src="./images/blog-img.png" alt="product" class="nav__cart--container-product-img">
-              </div>
-              <div class="nav__cart--container-product-details">
-                <h4 class="nav__cart--container-product-details-title">Product Title</h4>
-                <span class="nav__cart--container-product-details-new-price">$40.00</span>
-                <div class="nav__cart--container-product-input-box">
-                  <input type="number" class="nav__cart--container-product-input" min="1" max="100" value="1">
-                  <button class="nav__cart--container-product-input-minus-btn">&#8722;</button>
-                  <button class="nav__cart--container-product-input-plus-btn">&#43;</button>
-                </div>
-              </div>
-              <button class="nav__cart--container-product-remove-btn">
-                <img src="./images/close-icon.png" alt="close" class="nav__cart--container-product-remove-btn-img">
-              </button>
-            </div>
-
-          </div>
-
-          <div class="nav__cart--container-footer-content">
-
-            <div class="nav__cart--container-footer-subtotal-wrapper">
-              <h3 class="nav__cart--container-footer-subtotal-title">SUBTOTAL</h3>
-              <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
-            </div>
-
-            <div class="nav__cart--container-footer-subtotal-wrapper">
-              <h3 class="nav__cart--container-footer-subtotal-title">TOTAL</h3>
-              <span class="nav__cart--container-footer-subtotal-price">$40.00 $</span>
-            </div>
-
-
-            <a href="#" class="nav__cart--container-footer-shipping-btn">
-              Continue Shopping
-            </a>
-            <a href="#" class="nav__cart--container-footer-shipping-btn">
-              Checkout
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <section class="contact">
-        <div class="contact__wrapper">
-          <div class="contact__details--container">
-            <div class="contact__details--top">
-              <p class="contact__details--question">
-                Do you have any questions? Do you want to know more information about the products we sell?
-              </p>
-              <p class="contact__details--question">
-                Or maybe you have an order placed and want more information about it.
-              </p>
-            </div>
-            <div class="contact__details--headquaters">
-              <h2 class="contact__details--headquaters-title">
-                Headquarters:
-              </h2>
-              <p class="contact__details--headquaters-subtext">
-                VigoForte
-              </p>
-              <p class="contact__details--headquaters-subtext">
-                Brasov, Apata
-              </p>
-              <p class="contact__details--headquaters-subtext">
-                Garii street no. 170
-              </p>
-              <p class="contact__details--headquaters-subtext">
-                0774982262
-              </p>
-            </div>
-            <div class="contact__details--phone">
-              <p class="contact__details--phone-subtext">
-                If you want immediate information, please call the phone number above.
-              </p>
-              <p class="contact__details--phone-subtext">
-                Schedule: 08:00-19:00 Monday – Friday
-              </p>
-            </div>
-          </div>
-
-          <form action="#" class="contact__form--container">
-            <h2 class="contact__form--heading">Contact us</h2>
-
-            <label for="name" class="contact__form--label">Name</label>
-            <input class="contact__form--input" type="text" id="name" required>
-
-            <label for="email" class="contact__form--label">Email</label>
-            <input class="contact__form--input" type="email" name="email" id="email" required>
-
-            <label for="message" class="contact__form--label">Your message (optional)</label>
-            <textarea name="" id="message" cols="40" rows="10" class="contact__form--input"></textarea>
-
-            <button type="submit" class="contact__form--submit-btn">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <!-- Section Footer -->
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__top--wrapper">
-
-            <div class="footer__top--left-container">
-
-              <div class="footer__top--support-content">
-                <div class="footer__top--support-img-box">
-                  <img src="./images/send-mail.png" alt="email">
-                </div>
-                <div class="footer__top--support-info-box">
-                  <p class="footer__top--support-title">
-                    Support
-                  </p>
-                  <p class="footer__top--support-email">
-                    Info@domain.com
-                  </p>
-                </div>
-              </div>
-
-              <div class="footer__top--contact-content">
-                <div class="footer__top--contact-img-box">
-                  <img src="./images/telephone.png" alt="phone">
-                </div>
-                <div class="footer__top--contact-info-box">
-                  <p class="footer__top--contact-title">
-                    Call us today
-                  </p>
-                  <p class="footer__top--contact-email">
-                    123-456-7890
-                  </p>
-                </div>
-              </div>
-
-              <div class="footer__top--follow">
-                <h4 class="footer__top--follow-title">
-                  Follow us
-                </h4>
-                <div class="footer__top--follow-links">
-                  <a href="#" class="footer__top--follow-link">
-                    <img class="footer__top--follow-linkedin-img" src="./images/linkedin (1).png" alt="linkedin">
-                  </a>
-                  <a href="#" class="footer__top--follow-link">
-                    <img class="footer__top--follow-youtube-img" src="./images/youtube.png" alt="youtube">
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="footer__top--right-container">
-
-              <div class="footer__weightloss--links">
-                <h3 class="footer__weightloss--links-title">Weight Loss</h3>
-                <a href="#" class="footer__weightloss--link">
-                  Weight Loss
-                </a>
-                <a href="#" class="footer__weightloss--link">
-                  Diet and Nutrition
-                </a>
-                <a href="#" class="footer__weightloss--link">
-                  Health and Fitness
-                </a>
-                <a href="#" class="footer__weightloss--link">
-                  Motivation
-                </a>
-                <a href="#" class="footer__weightloss--link">
-                  Supplements
-                </a>
-              </div>
-
-              <div class="footer__resources--links">
-                <h3 class="footer__resources--links-title">Resources</h3>
-                <a href="#" class="footer__resources--link">
-                  Shipping Information
-                </a>
-                <a href="#" class="footer__resources--link">
-                  Returns & Refunds
-                </a>
-                <a href="./contact-us.html" class="footer__resources--link">
-                  Contact Us
-                </a>
-              </div>
-
-              <div class="footer__company--links">
-                <h3 class="footer__company--links-title">Company</h3>
-                <a href="#" class="footer__company--link">
-                  Terms & Conditions
-                </a>
-                <a href="#" class="footer__company--link">
-                  Privacy Policy
-                </a>
-                <a href="#" class="footer__company--link">
-                  Affiliate Network
-                </a>
-              </div>
-            </div>
-
-          </div>
-          <div class="footer__bottom--wrapper">
-            <p class="footer__bottom--info-text">
-              *These statements have not been evaluated by the Food and Drug Administration. These products are not
-              intended to diagnose, treat, cure, or prevent any disease. These products do not require a prescription or
-              doctor approval as they are herbal and do not contain any prescription ingredients. Results in the
-              Testimonials may not be typical and your results may vary. Not all people will obtain the same results.
-              These products are intended to be used in conjunction with a healthy diet and regular exercise. Consult
-              your
-              physician before starting any diet, exercise program or taking any supplements to avoid any health issues.
+    <section class="contact">
+      <div class="contact__wrapper">
+        <div class="contact__details--container">
+          <div class="contact__details--top">
+            <p class="contact__details--question">
+              Do you have any questions? Do you want to know more information about the products we sell?
             </p>
-            <p class="footer__bottom--info-text">
-              ** Money back guarantee does not apply to the one month supply. Refund excludes shipping costs.
+            <p class="contact__details--question">
+              Or maybe you have an order placed and want more information about it.
             </p>
-
           </div>
-
-          <div class="footer__copyright-box">
-            <p class="footer__copyright-text">
-              © 2023 Health Nutrition Limited.
+          <div class="contact__details--headquaters">
+            <h2 class="contact__details--headquaters-title">
+              Headquarters:
+            </h2>
+            <p class="contact__details--headquaters-subtext">
+              VigoForte
+            </p>
+            <p class="contact__details--headquaters-subtext">
+              Brasov, Apata
+            </p>
+            <p class="contact__details--headquaters-subtext">
+              Garii street no. 170
+            </p>
+            <p class="contact__details--headquaters-subtext">
+              0774982262
+            </p>
+          </div>
+          <div class="contact__details--phone">
+            <p class="contact__details--phone-subtext">
+              If you want immediate information, please call the phone number above.
+            </p>
+            <p class="contact__details--phone-subtext">
+              Schedule: 08:00-19:00 Monday – Friday
             </p>
           </div>
         </div>
-      </footer>
-    </main>
+
+        <form action="#" class="contact__form--container">
+          <h2 class="contact__form--heading">Contact us</h2>
+
+          <label for="name" class="contact__form--label">Name</label>
+          <input class="contact__form--input" type="text" id="name" required>
+
+          <label for="email" class="contact__form--label">Email</label>
+          <input class="contact__form--input" type="email" name="email" id="email" required>
+
+          <label for="message" class="contact__form--label">Your message (optional)</label>
+          <textarea name="" id="message" cols="40" rows="10" class="contact__form--input"></textarea>
+
+          <button type="submit" class="contact__form--submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__top--wrapper">
+
+          <div class="footer__top--left-container">
+
+            <div class="footer__top--support-content">
+              <div class="footer__top--support-img-box">
+                <img src="./images/send-mail.png" alt="email">
+              </div>
+              <div class="footer__top--support-info-box">
+                <p class="footer__top--support-title">
+                  Support
+                </p>
+                <p class="footer__top--support-email">
+                  Info@domain.com
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__top--contact-content">
+              <div class="footer__top--contact-img-box">
+                <img src="./images/telephone.png" alt="phone">
+              </div>
+              <div class="footer__top--contact-info-box">
+                <p class="footer__top--contact-title">
+                  Call us today
+                </p>
+                <p class="footer__top--contact-email">
+                  123-456-7890
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__top--follow">
+              <h4 class="footer__top--follow-title">
+                Follow us
+              </h4>
+              <div class="footer__top--follow-links">
+                <a href="#" class="footer__top--follow-link">
+                  <img class="footer__top--follow-linkedin-img" src="./images/linkedin (1).png" alt="linkedin">
+                </a>
+                <a href="#" class="footer__top--follow-link">
+                  <img class="footer__top--follow-youtube-img" src="./images/youtube.png" alt="youtube">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="footer__top--right-container">
+
+            <div class="footer__weightloss--links">
+              <h3 class="footer__weightloss--links-title">Weight Loss</h3>
+              <a href="#" class="footer__weightloss--link">
+                Weight Loss
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Diet and Nutrition
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Health and Fitness
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Motivation
+              </a>
+              <a href="#" class="footer__weightloss--link">
+                Supplements
+              </a>
+            </div>
+
+            <div class="footer__resources--links">
+              <h3 class="footer__resources--links-title">Resources</h3>
+              <a href="#" class="footer__resources--link">
+                Shipping Information
+              </a>
+              <a href="#" class="footer__resources--link">
+                Returns & Refunds
+              </a>
+              <a href="./contact-us.html" class="footer__resources--link">
+                Contact Us
+              </a>
+            </div>
+
+            <div class="footer__company--links">
+              <h3 class="footer__company--links-title">Company</h3>
+              <a href="#" class="footer__company--link">
+                Terms & Conditions
+              </a>
+              <a href="#" class="footer__company--link">
+                Privacy Policy
+              </a>
+              <a href="#" class="footer__company--link">
+                Affiliate Network
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer__bottom--wrapper">
+          <p class="footer__bottom--info-text">
+            *These statements have not been evaluated by the Food and Drug Administration. These products are not
+            intended to diagnose, treat, cure, or prevent any disease. These products do not require a prescription or
+            doctor approval as they are herbal and do not contain any prescription ingredients. Results in the
+            Testimonials may not be typical and your results may vary. Not all people will obtain the same results.
+            These products are intended to be used in conjunction with a healthy diet and regular exercise. Consult
+            your
+            physician before starting any diet, exercise program or taking any supplements to avoid any health issues.
+          </p>
+          <p class="footer__bottom--info-text">
+            ** Money back guarantee does not apply to the one month supply. Refund excludes shipping costs.
+          </p>
+
+        </div>
+
+        <div class="footer__copyright-box">
+          <p class="footer__copyright-text">
+            © 2023 Health Nutrition Limited.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
