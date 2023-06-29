@@ -593,7 +593,7 @@ body {
 .hero__footer {
   max-width: 100%;
   width: 100%;
-  padding: 40px 20px;
+  padding: 20px;
   margin-top: 70px;
   border-top: 13px solid #173f89;
   border-bottom: 13px solid #173f89;
@@ -661,7 +661,7 @@ body {
 
 .shop__category {
   background: #FFFFFF;
-  padding: 65px 0 105px 0;
+  padding: 65px 0;
   margin-bottom: 30px;
 }
 
@@ -723,15 +723,13 @@ body {
 
 .shop__category--card-left {
   width: 50%;
-  height: 286px;
   border-radius: 27px;
   overflow: hidden;
 }
 
 .shop__category--card-left img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 .shop__category--card-right {
@@ -791,7 +789,7 @@ body {
 /* Leader */
 .leader {
   background: #fff;
-  padding: 70px 0;
+  padding: 50px 0;
   margin-bottom: 30px;
 }
 
@@ -866,7 +864,6 @@ body {
 
 .leader__right--container {
   width: 60%;
-  height: 624px;
 }
 
 .leader__right--container img {
@@ -936,7 +933,6 @@ body {
 }
 
 .testimonial__card {
-  /* width: 33.33%; */
   padding: 33px 30px;
   background-color: #fff;
   border-radius: 30px;
@@ -1030,12 +1026,12 @@ body {
   top: 60% !important;
 }
 
-
 /* Latest Product */
 .latest__product {
   background: #fff;
   padding-top: 65px;
   margin-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .latest__product--top-content {
@@ -1082,7 +1078,6 @@ body {
 .swiper {
   max-width: 1440px;
   width: 100%;
-  height: 700px;
   margin-bottom: 80px;
 }
 
@@ -1099,6 +1094,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  bottom: -40px;
 }
 
 .swiper-button-prev {
@@ -1288,7 +1287,7 @@ body {
 /* Favourite Section */
 .favourite {
   background: #173F89;
-  padding: 80px 95px;
+  padding: 40px 95px;
 }
 
 .favourite__warapper {
@@ -1542,6 +1541,7 @@ body {
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
+  padding: 0 10px;
 }
 
 /* Footer */
@@ -1905,7 +1905,6 @@ body {
   height: auto;
 }
 
-
 /* Section Img with Text */
 .improves {
   background: url(../images/category-bg-gradient.png) no-repeat center/cover;
@@ -2101,6 +2100,28 @@ body {
   background-color: transparent;
 }
 
+/* Scroll Bar */
+/* width */
+.hero__footer--container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.hero__footer--container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.hero__footer--container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.hero__footer--container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Media Queries */
 @media (min-width: 1280px) {
   .nav__menu--btn-open {
@@ -2275,10 +2296,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  /* .testimonial__card {
-    width: 47%;
-  } */
 }
 
 @media (max-width: 1300px) {
@@ -2362,8 +2379,18 @@ body {
     text-transform: uppercase;
   }
 
+  .shop__category--card-left {
+    width: 100%;
+  }
+
+  .shop__category--card-right {
+    width: 100%;
+    text-align: center;
+  }
+
   .shop__category--card {
-    max-width: 100%;
+    max-width: 45%;
+    flex-direction: column;
   }
 
   .shop__category--title {
@@ -2402,7 +2429,7 @@ body {
   }
 
   .blog__card {
-    width: 43%;
+    width: 40%;
   }
 
   .blog__top--container-heading {
@@ -2502,7 +2529,7 @@ body {
   }
 
   .leader__wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 30px;
   }
 
@@ -2591,16 +2618,16 @@ body {
     flex-direction: column-reverse;
     gap: 30px;
   }
+
+  .testimonial__card {
+    width: 80%;
+  }
 }
 
 @media (max-width: 992px) {
   .testimonial__bottom--container {
     justify-content: center;
   }
-
-  /* .testimonial__card {
-    width: 100%;
-  } */
 
   .testimonial__card--top {
     justify-content: center;
@@ -2702,7 +2729,13 @@ body {
   }
 
   .hero__footer--container {
-    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+  .hero__footer--right {
     gap: 30px;
   }
 
@@ -2721,7 +2754,7 @@ body {
   }
 
   .hero__footer {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 
   .shop__category--card {
@@ -2732,24 +2765,19 @@ body {
     width: 100%;
   }
 
-  .shop__category--card-right {
-    width: 100%;
-    text-align: center;
-  }
-
   .shop__category--card-right-description-title {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .shop__category--card-right-description-subtext {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .shop__category--card-btn img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 
   .shop__category--card-btn {
@@ -2764,13 +2792,13 @@ body {
     padding: 30px 0;
   }
 
-  .blog__card {
-    width: 100%;
+  .blog__card--img-box {
+    height: 150px;
   }
 
   .blog__title {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .leader {
@@ -2783,10 +2811,6 @@ body {
 
   .latest__product {
     padding-top: 30px;
-  }
-
-  .swiper {
-    height: 680px;
   }
 
   #light {
@@ -2869,11 +2893,6 @@ body {
     margin-top: 50px;
   }
 
-  .hero__footer--right {
-    flex-direction: column;
-    gap: 30px;
-  }
-
   .shop__category--title {
     font-size: 30px;
     line-height: 36px;
@@ -2882,6 +2901,10 @@ body {
   .leader__heading {
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .shop__category--card {
+    padding: 15px;
   }
 
   .testimonial__card {
@@ -2903,16 +2926,6 @@ body {
     text-align: center;
     border-radius: 30px;
   }
-
-  /* .testimonial__card--person-name {
-    font-size: 18px;
-    line-height: 22px;
-  } */
-
-  /* .testimonial__card--person-verified {
-    font-size: 16px;
-    line-height: 20px;
-  } */
 
   .testimonial__card--title {
     font-size: 22px;
@@ -3053,5 +3066,14 @@ body {
 
   .category__products--card {
     width: 100%;
+  }
+
+  .shop__category--card-btn {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .shop__category--card-btn img {
+    display: none;
   }
 }

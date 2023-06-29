@@ -9,6 +9,7 @@ var swiper = new Swiper(".productSlider", {
   loop: true,
   scrollbar: {
     el: ".swiper-scrollbar",
+    hide: true,
   },
   navigation: {
     nextEl: ".swiper-button-next.product--btn-next",
