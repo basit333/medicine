@@ -183,28 +183,37 @@ document.addEventListener("click", function (event) {
           Video Popup
 ------------------------------
 */
-const videoBtn = document.querySelector(".favourite__left--container-btn");
-const videoCloseBtn = document.querySelector(".boxclose");
-const fadeOverlay = document.querySelector("#fade");
-const videoPlayer = document.getElementById("light");
 
-videoBtn.addEventListener("click", lightbox_open);
-videoCloseBtn.addEventListener("click", lightbox_close);
-fadeOverlay.addEventListener("click", lightbox_close);
+const videoBtns = document.querySelectorAll(".video-pop-up-btn");
+const videoCloseBtns = document.querySelectorAll(".boxclose");
+const fadeOverlays = document.querySelectorAll(".fade");
+const lightboxes = document.querySelectorAll(".light");
+const videoIframes = document.querySelectorAll(".video-popup-content");
 
-function lightbox_open() {
-  document.getElementById("light").style.display = "block";
-  document.getElementById("fade").style.display = "block";
+videoBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => lightbox_open(index));
+});
+
+videoCloseBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => lightbox_close(index));
+});
+
+fadeOverlays.forEach((overlay, index) => {
+  overlay.addEventListener("click", () => lightbox_close(index));
+});
+
+function lightbox_open(index) {
+  lightboxes[index].style.display = "block";
+  fadeOverlays[index].style.display = "block";
 }
 
-function lightbox_close() {
-  document.getElementById("light").style.display = "none";
-  document.getElementById("fade").style.display = "none";
+function lightbox_close(index) {
+  lightboxes[index].style.display = "none";
+  fadeOverlays[index].style.display = "none";
 
   // Stop video playback
-  const videoIframe = document.querySelector(".video-popup-content");
-  videoIframe.src = videoIframe.src; // Resets the video source and stops playback
+  videoIframes[index].src = videoIframes[index].src; // Resets the video source and stops playback
 
   // Mute the video
-  videoIframe.muted = true;
+  videoIframes[index].muted = true;
 }
