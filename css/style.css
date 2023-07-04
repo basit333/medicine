@@ -3495,8 +3495,8 @@ body {
 .tab__component--container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  max-width: 562px;
+  justify-content: space-between;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -3508,43 +3508,38 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #5F6165;
-}
-
-.tab__component--btn:not(:last-child) {
-  padding-right: 50px;
-}
-
-.tab__component--border-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 630px;
-  margin: 0 auto;
-}
-
-.tab__component-border {
-  width: 200px;
-  height: 2px;
-  background: #173F89;
   position: relative;
-  display: none;
 }
 
-.tab__component-border::before {
-  content: "";
+.tab__component--btn-dot {
   width: 10px;
   height: 10px;
-  background: #BB8966;
+  background: #F0EFED;
   border-radius: 50%;
-  position: absolute;
-  top: -4px;
-  left: 50%;
   border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -24px;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
-.tab__component-border-active {
-  display: block;
+.tab__component--btn-dot-active {
+  background: #BB8966;
+}
+
+.tab__component--btn-line {
+  width: 100%;
+  height: 2px;
+  background: #F0EFED;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-radius: 2px;
+}
+
+.tab__component--btn-line-active {
+  background: #173F89;
 }
 
 .tab__component--content-container {

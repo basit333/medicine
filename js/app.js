@@ -223,15 +223,34 @@ function lightbox_close(index) {
         Tab Componenet
 ------------------------------
 */
+
 const tabBtnContainer = document.querySelector(".tab__component--container");
-const tabBtn = document.querySelectorAll(".tab__component--btn");
-const tabContentContainer = document.querySelectorAll(".tab__component--content-container");
+const tabBtns = document.querySelectorAll(".tab__component--btn");
+const tabContentContainers = document.querySelectorAll(".tab__component--content-container");
 
 tabBtnContainer.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".tab__component--btn");
-  // Remove Active Class from the content
-  tabContentContainer.forEach((c) => c.classList.remove("tab__component--content-container-active"));
+  if (!e.target.classList.contains("tab__component--btn")) {
+    return; // Do nothing if the clicked element is not a tab button
+  }
 
-  // Add Active Class to the content
-  document.querySelector(`.tab__component--${clicked.dataset.tab}`).classList.add("tab__component--content-container-active");
+  const clickedBtn = e.target;
+  const clickedTabIndex = clickedBtn.getAttribute("data-tab");
+
+  // Remove active classes from all tab buttons
+  tabBtns.forEach((btn) => {
+    btn.querySelector(".tab__component--btn-dot").classList.remove("tab__component--btn-dot-active");
+    btn.querySelector(".tab__component--btn-line").classList.remove("tab__component--btn-line-active");
+  });
+
+  // Add active classes to the clicked tab button
+  clickedBtn.querySelector(".tab__component--btn-dot").classList.add("tab__component--btn-dot-active");
+  clickedBtn.querySelector(".tab__component--btn-line").classList.add("tab__component--btn-line-active");
+
+  // Remove active classes from all tab content containers
+  tabContentContainers.forEach((container) => {
+    container.classList.remove("tab__component--content-container-active");
+  });
+
+  // Add active class to the corresponding tab content container
+  document.querySelector(`.tab__component--${clickedTabIndex}`).classList.add("tab__component--content-container-active");
 });
