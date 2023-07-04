@@ -217,3 +217,21 @@ function lightbox_close(index) {
   // Mute the video
   videoIframes[index].muted = true;
 }
+
+/*
+------------------------------
+        Tab Componenet
+------------------------------
+*/
+const tabBtnContainer = document.querySelector(".tab__component--container");
+const tabBtn = document.querySelectorAll(".tab__component--btn");
+const tabContentContainer = document.querySelectorAll(".tab__component--content-container");
+
+tabBtnContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".tab__component--btn");
+  // Remove Active Class from the content
+  tabContentContainer.forEach((c) => c.classList.remove("tab__component--content-container-active"));
+
+  // Add Active Class to the content
+  document.querySelector(`.tab__component--${clicked.dataset.tab}`).classList.add("tab__component--content-container-active");
+});
