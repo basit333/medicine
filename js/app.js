@@ -228,29 +228,106 @@ const tabBtnContainer = document.querySelector(".tab__component--container");
 const tabBtns = document.querySelectorAll(".tab__component--btn");
 const tabContentContainers = document.querySelectorAll(".tab__component--content-container");
 
-tabBtnContainer.addEventListener("click", function (e) {
-  if (!e.target.classList.contains("tab__component--btn")) {
-    return; // Do nothing if the clicked element is not a tab button
-  }
+if (tabBtnContainer) {
+  tabBtnContainer.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("tab__component--btn")) {
+      return; // Do nothing if the clicked element is not a tab button
+    }
 
-  const clickedBtn = e.target;
-  const clickedTabIndex = clickedBtn.getAttribute("data-tab");
+    const clickedBtn = e.target;
+    const clickedTabIndex = clickedBtn.getAttribute("data-tab");
 
-  // Remove active classes from all tab buttons
-  tabBtns.forEach((btn) => {
-    btn.querySelector(".tab__component--btn-dot").classList.remove("tab__component--btn-dot-active");
-    btn.querySelector(".tab__component--btn-line").classList.remove("tab__component--btn-line-active");
+    // Remove active classes from all tab buttons
+    if (tabBtns) {
+      tabBtns.forEach((btn) => {
+        btn.querySelector(".tab__component--btn-dot").classList.remove("tab__component--btn-dot-active");
+        btn.querySelector(".tab__component--btn-line").classList.remove("tab__component--btn-line-active");
+      });
+    }
+
+    // Add active classes to the clicked tab button
+    clickedBtn.querySelector(".tab__component--btn-dot").classList.add("tab__component--btn-dot-active");
+    clickedBtn.querySelector(".tab__component--btn-line").classList.add("tab__component--btn-line-active");
+
+    // Remove active classes from all tab content containers
+    tabContentContainers.forEach((container) => {
+      container.classList.remove("tab__component--content-container-active");
+    });
+
+    // Add active class to the corresponding tab content container
+    document.querySelector(`.tab__component--${clickedTabIndex}`).classList.add("tab__component--content-container-active");
   });
+}
 
-  // Add active classes to the clicked tab button
-  clickedBtn.querySelector(".tab__component--btn-dot").classList.add("tab__component--btn-dot-active");
-  clickedBtn.querySelector(".tab__component--btn-line").classList.add("tab__component--btn-line-active");
+/*
+----------------------------------------
+      Checkout Form Other Address
+----------------------------------------
+*/
+const otherAddressBtn = document.querySelector(".checkout__billing--details-other-btn");
+const otherAddressContainer = document.querySelector(".checkout__billing--details-other-address-box");
 
-  // Remove active classes from all tab content containers
-  tabContentContainers.forEach((container) => {
-    container.classList.remove("tab__component--content-container-active");
+if (otherAddressBtn && otherAddressContainer) {
+  otherAddressBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    otherAddressContainer.classList.toggle("checkout__billing--details-other-address-box-active");
   });
+}
 
-  // Add active class to the corresponding tab content container
-  document.querySelector(`.tab__component--${clickedTabIndex}`).classList.add("tab__component--content-container-active");
+/*
+----------------------------------------
+      Checkout Form Add Note
+----------------------------------------
+*/
+
+const addNoteBtn = document.querySelector(".checkout__add--note-btn");
+const addNoteTextArea = document.querySelector(".checkout__add--note-textarea");
+
+if (addNoteBtn && addNoteTextArea) {
+  addNoteBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    addNoteTextArea.classList.toggle("checkout__add--note-textarea-active");
+  });
+}
+
+/*
+----------------------------------------
+      Checkbox Shipping Method
+----------------------------------------
+*/
+
+const checkboxShippingMethod = document.querySelectorAll(".checkout__shipping--method-checkbox");
+
+// Add click event listener to each checkbox
+checkboxShippingMethod.forEach(function (checkbox) {
+  checkbox.addEventListener("click", function () {
+    // Remove the active class from all checkboxes
+    checkboxShippingMethod.forEach(function (checkbox) {
+      checkbox.classList.remove("checkout__shipping--method-checkbox-active");
+    });
+
+    // Add the active class to the clicked checkbox
+    this.classList.add("checkout__shipping--method-checkbox-active");
+  });
+});
+
+/*
+----------------------------------------
+      Checkbox Payment Method
+----------------------------------------
+*/
+
+const checkboxPaymentMethod = document.querySelectorAll(".checkout__payment--method-checkbox");
+
+// Add click event listener to each checkbox
+checkboxPaymentMethod.forEach(function (checkbox) {
+  checkbox.addEventListener("click", function () {
+    // Remove the active class from all checkboxes
+    checkboxPaymentMethod.forEach(function (checkbox) {
+      checkbox.classList.remove("checkout__payment--method-checkbox-active");
+    });
+
+    // Add the active class to the clicked checkbox
+    this.classList.add("checkout__payment--method-checkbox-active");
+  });
 });
