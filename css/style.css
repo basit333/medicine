@@ -2962,6 +2962,8 @@ body {
   max-width: 1380px;
   margin: 0 auto;
   display: flex;
+  padding: 20px;
+  align-items: center;
 }
 
 .improved__wrapper:not(:last-child) {
@@ -3025,8 +3027,8 @@ body {
 }
 
 .improved__feedback--circle {
-  width: 115px;
-  height: 115px;
+  width: 80px;
+  height: 80px;
   margin-left: -75px;
 }
 
@@ -4369,7 +4371,7 @@ body {
 
 .checkout__container--right-product-trash {
   position: absolute;
-  right: -27px;
+  right: -20px;
   top: 0;
   cursor: pointer;
   background-color: transparent;
@@ -4715,6 +4717,11 @@ body {
     font-size: 38px;
     line-height: 44px;
   }
+
+  .improved__left--heading {
+    font-size: 38px;
+    line-height: 45px;
+  }
 }
 
 @media (max-width: 1335px) {
@@ -4950,6 +4957,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
+    flex-direction: column-reverse;
   }
 
   .improved__left-container {
@@ -4964,11 +4972,6 @@ body {
   .improved__wrapper:not(:last-child) {
     padding-bottom: 50px;
     margin-bottom: 50px;
-  }
-
-  .improved__left--heading {
-    font-size: 38px;
-    line-height: 45px;
   }
 
   .gradient__cards--container {
@@ -5613,12 +5616,29 @@ body {
     line-height: 22px;
   }
 
+  .product__goals--right {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
   .product__goals--right-card {
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     text-align: center;
+    align-items: flex-start;
     padding: 20px;
     height: auto;
+    width: 45%;
+  }
+
+  .product__goals--right-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .product__goals--right-card p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .stories__card {
@@ -5871,10 +5891,6 @@ body {
 
   .product__details--hero-wrapper {
     padding-inline: 30px;
-  }
-
-  .product__goals--right-card {
-    width: 100%;
   }
 
   .product__goals--left-heading {
