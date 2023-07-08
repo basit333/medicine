@@ -5649,7 +5649,7 @@ body {
     /* flex-direction: column; */
     flex-wrap: wrap;
     text-align: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 20px;
     height: auto;
     width: 45%;
