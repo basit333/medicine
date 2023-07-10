@@ -119,13 +119,17 @@ const cartMinusBtns = document.querySelectorAll(".nav__cart--container-product-i
 const cartPlusBtns = document.querySelectorAll(".nav__cart--container-product-input-plus-btn");
 
 // Add click event listeners to the buttons
-cartMinusBtns.forEach((btn) => {
-  btn.addEventListener("click", decreaseValue);
-});
+if (cartMinusBtns) {
+  cartMinusBtns.forEach((btn) => {
+    btn.addEventListener("click", decreaseValue);
+  });
+}
 
-cartPlusBtns.forEach((btn) => {
-  btn.addEventListener("click", increaseValue);
-});
+if (cartPlusBtns) {
+  cartPlusBtns.forEach((btn) => {
+    btn.addEventListener("click", increaseValue);
+  });
+}
 
 // Function to decrease the input value
 function decreaseValue(event) {
@@ -166,7 +170,9 @@ function hideAccountDropDown() {
 }
 
 // Event listener for the accountBtn click event
-accountBtn.addEventListener("click", showAccountDropDown);
+if (accountBtn) {
+  accountBtn.addEventListener("click", showAccountDropDown);
+}
 
 // Event listener for the document click event
 document.addEventListener("click", function (event) {
@@ -190,17 +196,23 @@ const fadeOverlays = document.querySelectorAll(".fade");
 const lightboxes = document.querySelectorAll(".light");
 const videoIframes = document.querySelectorAll(".video-popup-content");
 
-videoBtns.forEach((btn, index) => {
-  btn.addEventListener("click", () => lightbox_open(index));
-});
+if (videoBtns) {
+  videoBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => lightbox_open(index));
+  });
+}
 
-videoCloseBtns.forEach((btn, index) => {
-  btn.addEventListener("click", () => lightbox_close(index));
-});
+if (videoCloseBtns) {
+  videoCloseBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => lightbox_close(index));
+  });
+}
 
-fadeOverlays.forEach((overlay, index) => {
-  overlay.addEventListener("click", () => lightbox_close(index));
-});
+if (fadeOverlays) {
+  fadeOverlays.forEach((overlay, index) => {
+    overlay.addEventListener("click", () => lightbox_close(index));
+  });
+}
 
 function lightbox_open(index) {
   lightboxes[index].style.display = "block";
@@ -299,17 +311,19 @@ if (addNoteBtn && addNoteTextArea) {
 const checkboxShippingMethod = document.querySelectorAll(".checkout__shipping--method-checkbox");
 
 // Add click event listener to each checkbox
-checkboxShippingMethod.forEach(function (checkbox) {
-  checkbox.addEventListener("click", function () {
-    // Remove the active class from all checkboxes
-    checkboxShippingMethod.forEach(function (checkbox) {
-      checkbox.classList.remove("checkout__shipping--method-checkbox-active");
-    });
+if (checkboxShippingMethod) {
+  checkboxShippingMethod.forEach(function (checkbox) {
+    checkbox.addEventListener("click", function () {
+      // Remove the active class from all checkboxes
+      checkboxShippingMethod.forEach(function (checkbox) {
+        checkbox.classList.remove("checkout__shipping--method-checkbox-active");
+      });
 
-    // Add the active class to the clicked checkbox
-    this.classList.add("checkout__shipping--method-checkbox-active");
+      // Add the active class to the clicked checkbox
+      this.classList.add("checkout__shipping--method-checkbox-active");
+    });
   });
-});
+}
 
 /*
 ----------------------------------------
@@ -320,14 +334,16 @@ checkboxShippingMethod.forEach(function (checkbox) {
 const checkboxPaymentMethod = document.querySelectorAll(".checkout__payment--method-checkbox");
 
 // Add click event listener to each checkbox
-checkboxPaymentMethod.forEach(function (checkbox) {
-  checkbox.addEventListener("click", function () {
-    // Remove the active class from all checkboxes
-    checkboxPaymentMethod.forEach(function (checkbox) {
-      checkbox.classList.remove("checkout__payment--method-checkbox-active");
-    });
+if (checkboxPaymentMethod) {
+  checkboxPaymentMethod.forEach(function (checkbox) {
+    checkbox.addEventListener("click", function () {
+      // Remove the active class from all checkboxes
+      checkboxPaymentMethod.forEach(function (checkbox) {
+        checkbox.classList.remove("checkout__payment--method-checkbox-active");
+      });
 
-    // Add the active class to the clicked checkbox
-    this.classList.add("checkout__payment--method-checkbox-active");
+      // Add the active class to the clicked checkbox
+      this.classList.add("checkout__payment--method-checkbox-active");
+    });
   });
-});
+}
