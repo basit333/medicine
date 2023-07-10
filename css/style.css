@@ -4234,6 +4234,7 @@ body {
 .checkout__add--note-textarea {
   width: 100%;
   resize: none;
+  padding: 10px;
   outline: 0;
   border-radius: 5px;
   display: none;
