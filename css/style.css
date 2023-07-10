@@ -156,6 +156,12 @@ body {
   background: #F7F6F4;
 }
 
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
 .navbar {
   display: flex;
   align-items: center;
