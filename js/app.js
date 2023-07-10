@@ -64,6 +64,38 @@ var swiper = new Swiper(".testimonialSlider", {
 });
 
 /*
+-----------------------------------------
+  Swiper Slider Stories Product Slider
+-----------------------------------------
+*/
+
+var swiper = new Swiper(".storiesProductSlider", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next.stories__card--btn-next",
+    prevEl: ".swiper-button-prev.stories__card--btn-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+
+/*
 ------------------------------
         Mobile Navbar
 ------------------------------
