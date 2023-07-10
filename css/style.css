@@ -4427,6 +4427,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 10px;
 }
 
 .checkout__container--right-product-input-box input {
@@ -4436,6 +4437,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   color: #1D1E1F;
+  border: 1px solid #1D1E1F;
   font-family: inherit;
 }
 
