@@ -3791,7 +3791,7 @@ button {
 .pricing__plan--footer-card-rates-discount-box-title {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: 200;
   color: #1B273E;
   position: relative;
   display: inline-block;
@@ -3833,7 +3833,7 @@ button {
   display: block;
   font-size: 28px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: 700;
   color: #173F89;
 }
 
@@ -3851,21 +3851,16 @@ button {
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: #AD8369;
+  background-color: #BB8966;
+  color: #fff;
   border: 1px solid #EBE9E6;
   border-radius: 30px;
   padding: 10px 19px 10px 42px;
-  transition: all .3s ease-in-out;
   margin-bottom: 17px;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 20px;
   font-weight: 500;
-}
-
-.pricing__plan--footer-btn:hover {
-  background-color: #BB8966;
-  color: #fff;
 }
 
 .pricing__plan--footer-btn img {
@@ -5445,13 +5440,14 @@ button {
 
   .hero__left--heading,
   .category__hero--left-heading {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .hero__left--subtext,
   .category__hero--left-subtext {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .hero__footer--container {
@@ -5588,7 +5584,7 @@ button {
   }
 
   .favourite {
-    padding: 80px 30px;
+    padding: 80px 20px;
   }
 
   .contact {
@@ -5775,7 +5771,7 @@ button {
   }
 
   .hero__wrapper {
-    padding-inline: 30px;
+    padding-inline: 20px;
   }
 
   .hero__footer {
@@ -5855,7 +5851,7 @@ button {
   }
 
   .blog__card--container {
-    padding: 55px 25px 0 25px;
+    padding: 55px 20px 0 20px;
   }
 
   .blog__top--container-heading {
@@ -5897,7 +5893,7 @@ button {
   }
 
   .shop__category--cards-container {
-    padding-inline: 25px;
+    padding-inline: 20px;
   }
 
   .testimonial__bottom--container {
@@ -6129,6 +6125,10 @@ button {
 
   .footer__wrapper {
     padding: 0 20px;
+  }
+
+  .leader__wrapper {
+    padding-inline: 20px;
   }
 }
 
