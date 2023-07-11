@@ -2896,11 +2896,13 @@ button {
 }
 
 .stories__card--img-box {
+  display: block;
   width: 100%;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .stories__card--img {
